@@ -39,13 +39,13 @@ const questions = [
       },
       {
         type: 'input',
-        name: 'insatalation',
+        name: 'instalation',
         message: 'What are the steps required to install your project?',
       },
       {
         type: 'input',
-        name: 'issue',
-        message: 'how to report issues?',
+        name: 'usage',
+        message: 'describe the usage of the app?',
       },
       {
         type: 'input',
@@ -58,15 +58,31 @@ const questions = [
         name: 'license',
         message: 'Choose license',
         choices: ['MIT','ISC', 'GNUPLv3'],
-        filter(value){
-            return value.toLowerCase();
+         filter(value){
+           return value.toLowerCase();
         }
-      }
+      },
+      {
+        type: 'input',
+        name: 'test',
+        message: 'Write test for your app?',
+      },
 
+      {
+        type: 'input',
+        name: 'GitHub',
+        message: 'your GitHub?',
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'email?',
+      },
 
 
 
 ];
+
 
 const promptUser = function () {
     return inquirer.prompt(questions)
