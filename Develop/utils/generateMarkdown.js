@@ -69,7 +69,7 @@ ${renderLicenseBadge(data.license)}
  ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+- [Test](#test)
 - [License](#license)
 
  ## Instalation: \n
@@ -96,7 +96,7 @@ ${renderLicenseBadge(data.license)}
 
  ## Questions:
  * GitHub :[GitHub](${data.GitHub})\n
- *E mail : ${data.email}\n
+ * Email : ${data.email}\n
 
 `;
 }
